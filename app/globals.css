@@ -83,6 +83,10 @@ body {
   @apply py-7 lg:py-10 xl:py-14 scroll-mt-24;
 }
 
+.field {
+  @apply w-full bg-transparent border-b-white border-b-[1px] p-2 text-white placeholder-white;
+}
+
 .section_padding {
   @apply py-7 lg:py-20 xl:py-28 scroll-mt-24;
 }
