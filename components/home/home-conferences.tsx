@@ -111,7 +111,7 @@ function CallToActionButtons({
         View&nbsp;Events
       </Link>
       <Link
-        href={configs.forms.submitPaper}
+        href="/submit-paper"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-yellow-300 text-black rounded-md hover:-translate-y-1 transition-all active:translate-y-1 duration-100 px-3 py-1"
