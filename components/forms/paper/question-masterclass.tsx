@@ -1,3 +1,4 @@
+import { PaperFormikValuesType } from "@/lib/form-paper-types";
 import { FormValuesType, MasterclassType } from "@/lib/types";
 import { FormikErrors, FormikTouched } from "formik";
 import React, { Fragment } from "react";
@@ -13,7 +14,7 @@ import React, { Fragment } from "react";
 //
 type QuestionMasterclassProps = {
   masterclasses: MasterclassType[];
-  touched: FormikTouched<FormValuesType>;
+  touched: FormikTouched<PaperFormikValuesType>;
 };
 export default function QuestionMasterclass({
   masterclasses,

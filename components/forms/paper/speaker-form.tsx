@@ -8,6 +8,10 @@ import QuestionDinner from "./question-dinner";
 import QuestionMasterclass from "./question-masterclass";
 import QuestionPaperInformation from "./question-paper-info";
 import { EventType } from "@/lib/types";
+import QuestionPaymentType from "./question-payment-type";
+import QuestionDiscount from "./question-discount";
+import QuestionReferral from "./question-referral";
+import QuestionGuidelines from "./question-guidelines";
 
 type SpeakerFormProps = {
   events: EventType[];
@@ -20,7 +24,7 @@ export default function SpeakerForm({ events }: SpeakerFormProps) {
         event: null,
         name: null,
         jobTitle: null,
-        organisation: null,
+        organization: null,
         address: null,
         phone: null,
         email: null,
@@ -33,7 +37,7 @@ export default function SpeakerForm({ events }: SpeakerFormProps) {
         payment: null,
         discount: null,
         referral: null,
-        agreement: false,
+        agreement: null,
       }}
       validationSchema={FormValidation}
       onSubmit={async () => {}}
@@ -49,7 +53,7 @@ export default function SpeakerForm({ events }: SpeakerFormProps) {
             <QuestionPaperInformation values={values} touched={touched} />
           </div>
           <div>
-            <h3 className="text-2xl italic">Networking & Accomodation</h3>
+            <h3 className="question_title">Networking & Accomodation</h3>
             <QuestionAccomodation values={values} touched={touched} />
             <QuestionDinner
               name={values.name}
@@ -63,6 +67,22 @@ export default function SpeakerForm({ events }: SpeakerFormProps) {
                 touched={touched}
               />
             )}
+          </div>
+          <div>
+            <h3 className="question_title">Payment</h3>
+            <QuestionPaymentType touched={touched} />
+          </div>
+          <div>
+            <h3 className="question_title">Discount Code</h3>
+            <QuestionDiscount values={values} touched={touched} />
+          </div>
+          <div>
+            <h3 className="question_title">How did you hear about us?</h3>
+            <QuestionReferral touched={touched} />
+          </div>
+          <div>
+            <h3 className="question_title">Guidlines for Submitting a Paper</h3>
+            <QuestionGuidelines touched={touched} />
           </div>
         </Form>
       )}

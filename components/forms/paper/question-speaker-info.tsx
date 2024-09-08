@@ -1,13 +1,10 @@
-import {
-  PaperFormikValuesType,
-  PaperSubmissionType,
-} from "@/lib/form-paper-types";
-import clsx from "clsx";
+import { PaperFormikValuesType } from "@/lib/form-paper-types";
 import { Field, FormikTouched } from "formik";
+import clsx from "clsx";
 
 type InformationQuestionProps = {
   values: PaperFormikValuesType;
-  touched: FormikTouched<PaperSubmissionType>;
+  touched: FormikTouched<PaperFormikValuesType>;
 };
 
 export default function QuestionSpeakerInformation({
@@ -40,7 +37,7 @@ export default function QuestionSpeakerInformation({
         placeholder="Organisation"
         className={clsx("field", {
           "!placeholder-red-500 !border-red-500 italic":
-            !values.organisation?.trim() && touched.organization,
+            !values.organization?.trim() && touched.organization,
         })}
       />
       <Field

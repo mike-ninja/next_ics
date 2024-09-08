@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.speaker_question_title {
+  @apply text-2xl italic;
+}
