@@ -12,6 +12,7 @@ import QuestionPaymentType from "./question-payment-type";
 import QuestionDiscount from "./question-discount";
 import QuestionReferral from "./question-referral";
 import QuestionGuidelines from "./question-guidelines";
+import { PaperFormikValuesType } from "@/lib/form-paper-types";
 
 type SpeakerFormProps = {
   events: EventType[];
@@ -20,25 +21,27 @@ type SpeakerFormProps = {
 export default function SpeakerForm({ events }: SpeakerFormProps) {
   return (
     <Formik
-      initialValues={{
-        event: null,
-        name: null,
-        jobTitle: null,
-        organization: null,
-        address: null,
-        phone: null,
-        email: null,
-        paperTitle: null,
-        biography: null,
-        paperDescription: null,
-        accomodation: null,
-        dinnerParticipants: [],
-        masterclass: null,
-        payment: null,
-        discount: null,
-        referral: null,
-        agreement: null,
-      }}
+      initialValues={
+        {
+          event: null,
+          name: null,
+          jobTitle: null,
+          organisation: null,
+          address: null,
+          phone: null,
+          email: null,
+          paperTitle: null,
+          biography: null,
+          paperDescription: null,
+          accomodation: null,
+          dinnerParticipants: [],
+          masterclass: null,
+          payment: null,
+          discount: null,
+          referral: null,
+          agreement: null,
+        } as PaperFormikValuesType
+      }
       validationSchema={FormValidation}
       onSubmit={async () => {}}
     >

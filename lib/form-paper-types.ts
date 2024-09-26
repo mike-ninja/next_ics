@@ -5,7 +5,7 @@ export type PaperFormikValuesType = {
   event: string | null;
   name: string | null;
   jobTitle: string | null;
-  organization: string | null;
+  organisation: string | null;
   address: string | null;
   phone: string | null;
   email: string | null;
@@ -13,7 +13,7 @@ export type PaperFormikValuesType = {
   biography: string | null;
   paperDescription: string | null;
   accomodation: string | null;
-  dinnerParticipants: Array<DinnerParticipantType> | null;
+  dinnerParticipants: DinnerParticipantType[];
   masterclass: string | null;
   payment: string | null;
   discount: string | null;

@@ -37,7 +37,7 @@ export default function QuestionSpeakerInformation({
         placeholder="Organisation"
         className={clsx("field", {
           "!placeholder-red-500 !border-red-500 italic":
-            !values.organization?.trim() && touched.organization,
+            !values.organisation?.trim() && touched.organisation,
         })}
       />
       <Field
@@ -49,11 +49,10 @@ export default function QuestionSpeakerInformation({
             !values.address?.trim() && touched.address,
         })}
       />
-      <Field name="phone" type="text" placeholder="Phone" className="field" />
       <Field
         name="phone"
         type="text"
-        placeholder="Mobile"
+        placeholder="Phone"
         className={clsx("field", {
           "!placeholder-red-500 !border-red-500 italic":
             !values.phone?.trim() && touched.phone,

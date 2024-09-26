@@ -1,13 +1,10 @@
-import {
-  PaperFormikValuesType,
-  PaperSubmissionType,
-} from "@/lib/form-paper-types";
-import clsx from "clsx";
+import { PaperFormikValuesType } from "@/lib/form-paper-types";
 import { Field, FormikTouched } from "formik";
+import clsx from "clsx";
 
 type QuestionPaperInformationProps = {
   values: PaperFormikValuesType;
-  touched: FormikTouched<PaperSubmissionType>;
+  touched: FormikTouched<PaperFormikValuesType>;
 };
 
 export default function QuestionPaperInformation({
@@ -22,7 +19,7 @@ export default function QuestionPaperInformation({
         placeholder="Paper Title"
         className={clsx("field", {
           "!placeholder-red-500 !border-red-500 italic":
-            !values.jobTitle?.trim() && touched.jobTitle,
+            !values.paperTitle?.trim() && touched.paperTitle,
         })}
       />
       <div className="grid grid-cols-2 gap-2">
@@ -32,7 +29,7 @@ export default function QuestionPaperInformation({
           placeholder="Speaker Biography"
           className={clsx("field", {
             "!placeholder-red-500 !border-red-500 italic":
-              !values.name?.trim() && touched.name,
+              !values.biography?.trim() && touched.biography,
           })}
         />
         <Field
@@ -41,7 +38,7 @@ export default function QuestionPaperInformation({
           placeholder="Paper Description"
           className={clsx("field", {
             "!placeholder-red-500 !border-red-500 italic":
-              !values.organisation?.trim() && touched.organization,
+              !values.paperDescription?.trim() && touched.paperDescription,
           })}
         />
       </div>
