@@ -73,6 +73,16 @@ export type EventType = {
   conference: ConferenceInEventType | undefined;
 };
 
+// Props needed to make a page header and have
+// consistent showcase of information
+export type HeaderPropsType = {
+  title: string;
+  subtitle: string;
+  anchor: string;
+  register?: string;
+  paper?: string;
+};
+
 export type ConferenceInEventType = Omit<
   ConferenceType,
   | "slug"

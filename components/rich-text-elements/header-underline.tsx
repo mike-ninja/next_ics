@@ -4,9 +4,9 @@ type HeaderUnderlineProps = {
 
 export default function HeaderUnderline({ children }: HeaderUnderlineProps) {
   return (
-    <div className="mb-1">
+    <div className="mb-4 w-fit">
       {children}
-      <div className="bg-yellow-400 h-2.5 w-24 -mt-0.5 box_shadow" />
+      <hr className="border-yellow-400 border-t-[7px] mt-1 w-3/4 box_shadow" />
     </div>
   );
 }

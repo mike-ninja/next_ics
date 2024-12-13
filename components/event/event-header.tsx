@@ -1,12 +1,11 @@
-import React, { ReactNode } from "react";
-import Link from "next/link";
-import { BsChevronDown } from "react-icons/bs";
 import { HeaderPropsType } from "@/lib/types";
+import { BsChevronDown } from "react-icons/bs";
+import Link from "next/link";
 
-export default function SharedHeader({ prop }: { prop: HeaderPropsType }) {
+export default function EventHeader({ prop }: { prop: HeaderPropsType }) {
   return (
     <header className="bg-yellow-400">
-      <div className="section_container header_height relative text-stone-900 flex_col justify-center text-center">
+      <div className="container header_height relative text-stone-900 flex_col justify-center text-center">
         <h1 className="uppercase drop-shadow font-extrabold leading-tight text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
           {prop.title}
         </h1>

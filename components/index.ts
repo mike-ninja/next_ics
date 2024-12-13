@@ -5,6 +5,7 @@ import AboutPurpose from "./about/about-purpose";
 import AboutValues from "./about/about-values";
 import AboutVision from "./about/about-vision";
 import EventInformation from "./event/event-information";
+import EventHeader from "./event/event-header";
 import ContactForm from "./contact-form";
 import ExitDraftModeLink from "./exit-draft-mode-link";
 import ConferenceAbout from "./conference/conference-about";
@@ -49,6 +50,7 @@ export {
   ConferenceSponsors,
   ContactForm,
   EventInformation,
+  EventHeader,
   ExitDraftModeLink,
   Footer,
   GoogleAnalytics,

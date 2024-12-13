@@ -1,5 +1,3 @@
-import "../event/event.css";
-
 import React, { ReactNode } from "react";
 import { Block, BLOCKS, Inline, MARKS } from "@contentful/rich-text-types";
 import { Document as RichTextDocument } from "@contentful/rich-text-types";
@@ -54,7 +52,7 @@ export default function RichText({
         <h6 className="third_title">{children}</h6>
       ),
       [BLOCKS.PARAGRAPH]: (_node: Block | Inline, children: ReactNode) => (
-        <p className="rich_text_p">{children}</p>
+        <p className="paragraph">{children}</p>
       ),
       [BLOCKS.UL_LIST]: (_node: Block | Inline, children: ReactNode) => (
         <ul className="ul">{children}</ul>

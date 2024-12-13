@@ -2,7 +2,7 @@ import {
   SubscribeEmailList,
   EventInformation,
   CallToAction,
-  SharedHeader,
+  EventHeader,
 } from "@/components";
 import { draftMode } from "next/headers";
 import { notFound } from "next/navigation";
@@ -49,7 +49,7 @@ export default async function page({ params }: EventPageProps) {
 
   return (
     <>
-      <SharedHeader prop={{ ...headerText }} />
+      <EventHeader prop={{ ...headerText }} />
       <EventInformation {...eventPage} />
       <CallToAction />
       <SubscribeEmailList />

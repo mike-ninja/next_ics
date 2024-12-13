@@ -38,16 +38,18 @@ export default function EventInformation(event: EventType) {
   }
   return (
     <section id="information" className="section_margin">
-      <div className="section_container">
-        <EventTabs
-          tab={tab}
-          setTab={setTab}
-          agenda={agenda}
-          masterclass={masterclasses}
-        />
-        <article className="bg-stone-800/80 py-5 px-3 sm:px-7 rounded-sm">
-          {content}
-        </article>
+      <div className="container">
+        <div className="w-[min(80ch,100%)] mx-auto">
+          <EventTabs
+            tab={tab}
+            setTab={setTab}
+            agenda={agenda}
+            masterclass={masterclasses}
+          />
+          <article className="bg-stone-800/80 py-5 px-3 sm:px-7 rounded-sm">
+            {content}
+          </article>
+        </div>
       </div>
     </section>
   );

@@ -8,7 +8,7 @@ export function EventAcknowledgement() {
       <HeaderUnderline>
         <h1 className="primary_title">ACKNOWLEDGEMENT TO COUNTRY</h1>
       </HeaderUnderline>
-      <p className="rich_text_p">
+      <p className="paragraph">
         In Australia, the protocol is to recognise the Traditional Owners of the
         land to which we are gathering. Therefore, all presentations must begin
         with an acknowledgement to country and to local Traditional Elders: “We
@@ -19,7 +19,7 @@ export function EventAcknowledgement() {
         attending from other areas of Australia who are present here”.
       </p>
 
-      <p className="rich_text_p">
+      <p className="paragraph">
         Indigenous Conference Services acknowledges and pay our respect to the
         Traditional people of the Country. "Welcome to Country" ceremony and
         "acknowledging the traditional custodians" of the land shows respect for
@@ -32,11 +32,11 @@ export function EventAcknowledgement() {
 
 export function WhyAttend() {
   return (
-    <div className="px-3">
+    <div>
       <HeaderUnderline>
         <h1 className="primary_title">Why Attend</h1>
       </HeaderUnderline>
-      <p className="rich_text_p">
+      <p className="paragraph">
         This conference presents a unique opportunity for delegates to
         participate in a positive environment that is dedicated to the sharing
         of information and the empowering of all who attend. In our everyday
@@ -55,11 +55,11 @@ export function WhyAttend() {
 
 export function YourInvitation() {
   return (
-    <div className="px-3">
+    <div>
       <HeaderUnderline>
         <h1 className="primary_title">Your Invitation</h1>
       </HeaderUnderline>
-      <p className="rich_text_p">
+      <p className="paragraph">
         We wish to invite Indigenous and non-Indigenous people from Australia
         and throughout, to attend the conference to share and gather
         information. We also extend an invitation to participants to join us at
@@ -77,7 +77,7 @@ export function YourInvitation() {
         <li>Where: Shangri-La Hotel Cairns QLD Australia</li>
         <li>Time: 9.00am - 5:00pm</li>
       </ul>
-      <p className="rich_text_p">
+      <p className="paragraph">
         WARNING: Limited availability. Please register online or contact us via
         email, should you have any further queries.
       </p>
@@ -87,13 +87,13 @@ export function YourInvitation() {
 
 export function BenefitsForEmployer() {
   return (
-    <div className="px-3">
+    <div>
       <HeaderUnderline>
         <h1 className="primary_title">
           BENEFITS OF ATTENDING FOR THE EMPLOYER
         </h1>
       </HeaderUnderline>
-      <p className="rich_text_p">
+      <p className="paragraph">
         As an employee, we are asked to present valid reasons why we should
         attend. Listed below are valid points that can be raised with your
         employer to justify your attendance: Staff attending conferences
@@ -133,11 +133,11 @@ export function BenefitsForEmployer() {
 
 export function CallingForPapers() {
   return (
-    <div className="px-3">
+    <div>
       <HeaderUnderline>
         <h1 className="primary_title">CALLING FOR PAPER</h1>
       </HeaderUnderline>
-      <p className="rich_text_p">
+      <p className="paragraph">
         To ensure grassroots community programs are highlighted, no less than 50
         per cent of the conference proceedings are and is devoted to community
         groups. If your paper is selected, you may have more than one presenter
@@ -147,7 +147,7 @@ export function CallingForPapers() {
         be distributed at the conclusion of the event with all other
         presentations.
       </p>
-      <p className="rich_text_p">Guidelines in Submitting Paper:</p>
+      <p className="paragraph">Guidelines in Submitting Paper:</p>
       <ul className="ul mb-2">
         <li>
           Papers should not contain offensive language and take into account
@@ -216,11 +216,11 @@ export function CallingForPapers() {
 
 export function GuestSpeakers() {
   return (
-    <div className="px-3">
+    <div>
       <HeaderUnderline>
         <h1 className="primary_title">GUEST SPEAKERS</h1>
       </HeaderUnderline>
-      <p className="rich_text_p">
+      <p className="paragraph">
         The event is blessed with a kaleidoscope of guest speakers, sharing
         stories, successes and challenges they’ve overcome, presenting great
         opportunities and inspiration for delegates to participate in an event
@@ -237,11 +237,11 @@ export function GuestSpeakers() {
 
 export function Registration() {
   return (
-    <div className="px-3">
+    <div>
       <HeaderUnderline>
         <h1 className="primary_title">REGISTRATION</h1>
       </HeaderUnderline>
-      <p className="rich_text_p">
+      <p className="paragraph">
         Register early to get a discount! Please note that registrations are set
         out in an affordable way for organisations, which changes on a monthly
         basis. Hence the earlier you register, the more savings for your
@@ -260,11 +260,11 @@ export function Registration() {
 
 export function SponsoringTheConference() {
   return (
-    <div className="px-3">
+    <div>
       <HeaderUnderline>
         <h1 className="primary_title">SPONSORING THE CONFERENCE</h1>
       </HeaderUnderline>
-      <p className="rich_text_p">
+      <p className="paragraph">
         Flexible sponsorship packages are available. Sponsorship opportunities
         are only open to businesses and private enterprises, not individuals. To
         showcase your organisation to all conference delegates, ICS has
@@ -290,7 +290,7 @@ export function SponsoringTheConference() {
           & USB with photos for reporting purposes.
         </li>
       </ul>
-      <p className="rich_text_p">
+      <p className="paragraph">
         To sponsor the conference, please contact us. Indigenous Conference
         Services (Australia) will be of further assistance in tailoring your
         sponsorship arrangement. Please phone us on +61 4557 76 668 or send us
@@ -302,11 +302,11 @@ export function SponsoringTheConference() {
 
 export function ContactUs() {
   return (
-    <div className="px-3">
+    <div>
       <HeaderUnderline>
         <h1 className="primary_title">CONTACT US</h1>
       </HeaderUnderline>
-      <p className="rich_text_p">
+      <p className="paragraph">
         For more information or inquiries, please reach out to us at the
         following contact details:
       </p>
